@@ -52,7 +52,7 @@ From Q3, we know that: $$r.s = 10$$
 
 Therefore
 
-$${{r.s \over |r||r|}r} = {10 \over 25} \begin{pmatrix} 3\\ -4\\ 0\\ \end{pmatrix} = \begin{pmatrix} 6/5\\ -8/5\\ 0\\ \end{pmatrix}$$
+$${{r.s \over |r||r|}r} = {10 \over 25} \begin{pmatrix} 3 \\\ -4 \\\ 0 \\\ \end{pmatrix} = \begin{pmatrix} 6/5 \\\ -8/5 \\\ 0 \\\ \end{pmatrix}$$
 
 ### Q5: Let **a** = [3, 0, 4] and **b** = [0, 5, 12]. Which is larger, $$|a + b|$$ or $$|a| + |b|$$? 
 
