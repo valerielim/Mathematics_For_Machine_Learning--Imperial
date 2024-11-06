@@ -1,6 +1,6 @@
 # Week2 - Dot Project of Vectors
 
-Practice assignment walkthrough. 
+Practice assignment walkthrough. Workings at the top, screenshots at the bottom. 
 
 ### Q1: What is the size of the vector **s** = [1, 3, 4, 2]?
 
@@ -97,3 +97,15 @@ Therefore $|a + b| < |a| + |b|$.
 * The vector projection of S onto R is equal to the scalar projection of S onto R multiplied by a vector of unit length that points in the same direction as R. ==[TRUE - this is the formula for vector projection]==
 
 * The scalar projection of S onto R is always the same as the scalar projection of R onto S. ==[FALSE - see diagrams]==
+
+# Screenshots
+
+![alt text](w2_dot_product_of_vectors_1.png)
+
+![alt text](w2_dot_product_of_vectors_2.png)
+
+![alt text](w2_dot_product_of_vectors_3.png)
+
+![alt text](w2_dot_product_of_vectors_4.png)
+
+![alt text](w2_dot_product_of_vectors_5.png)
