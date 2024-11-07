@@ -100,12 +100,12 @@ Therefore $|a + b| < |a| + |b|$.
 
 # Screenshots
 
-![alt text](w2_dot_product_of_vectors_1.png)
+![alt text](imgs/w2_dot_product_of_vectors_1.png)
 
-![alt text](w2_dot_product_of_vectors_2.png)
+![alt text](imgs/w2_dot_product_of_vectors_2.png)
 
-![alt text](w2_dot_product_of_vectors_3.png)
+![alt text](imgs/w2_dot_product_of_vectors_3.png)
 
-![alt text](w2_dot_product_of_vectors_4.png)
+![alt text](imgs/w2_dot_product_of_vectors_4.png)
 
-![alt text](w2_dot_product_of_vectors_5.png)
+![alt text](imgs/w2_dot_product_of_vectors_5.png)
