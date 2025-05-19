@@ -2,16 +2,15 @@
 
 ### Week 1 
 
-Contents summary 
-
-* Introduction: Applications of Vectors 
-* Exploring parameter space 
-* Solving simultaneous equations 
+* Introduction
+* Practice Assignment: Exploring parameter space 
+* Practice Assignment: Solving simultaneous equations 
+* Practice Assignment: Doing some vector operations
 
 Exercise: Doing Some Vector Operations 
 
-* vector addition `[a, b] + [c, d]`
-* vector subtraction `[a, b] - [c, d]`
+* vector addition `[a, b] + [c, d] = [a+c, b+d]`
+* vector subtraction `[a, b] - [c, d] = [a-c, b-d]`
 * identifying the right vector in a 2d space [x, y]
 
 Cheatsheet & Notes: 
