@@ -13,9 +13,9 @@
 
 * If a vector is constructed out of two orthorgonal vectors (ie., they are at a right angle), we can find the length using pythagoras's theorem 
 
-$Vector r = ai + bj$
+==$Vector R = ai + bj$==
 
-$Length of r = |r| = \sqrt{a^2 + b^2}$
+$Length of R = |r| = \sqrt{a^2 + b^2}$
 
 * Another way to get the size of a vector is simply by taking the dot product of the vector with itself: 
 
