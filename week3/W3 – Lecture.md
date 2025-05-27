@@ -74,7 +74,7 @@ Application: Image transformation occassionally (eg., to detect and fix skew in 
 
 * The identity matrix is defined as: 
 
-$$\begin{bmatrix} 1 & 0 & 0\\ 0 & 1 & 0\\\
+$$\begin{bmatrix} 1 & 0 & 0\\\ 0 & 1 & 0\\\
 0 & 0 & 1\end{bmatrix}$$
 
 * We can write the formula for the identity as: $A . A^-1 = I$
@@ -92,7 +92,9 @@ $$\begin{bmatrix} 1 & 0 & 0\\ 0 & 1 & 0\\\
 
 ### The Determinant
 
-* Suppose we scale a matrix `[x, 0]` and `[0, y]` and we scale this larger by $\begin{bmatrix}a & 0\\\ 0 & d\end{bmatrix}$, we can say that **the new space is larger by a factor of `ad`**, and the determinant of this transformation matrix
+* Suppose we scale a matrix `[x, 0]` and `[0, y]` and we scale this larger by the formula below, we can say that **the new space is larger by a factor of `ad`**, and the determinant of this transformation matrix
+
+$$\begin{bmatrix}a & 0\\\ 0 & d\end{bmatrix}$$
 
 ![Lecture 3](imgs/w3_lect5.png)
 
@@ -112,9 +114,14 @@ $$
 
 > What happens when a matrix doesnt have linearly independent basis vectors? 
 
-* Suppose we have a matrix $A = \begin{bmatrix}1&2 \\\ 1&2\end{bmatrix}$ that we want to scale a vector by 
+* Suppose we have a matrix that we want to scale a vector by, matrix A:
+
+$$A = \begin{bmatrix}1 & 2\\\ 1 & 2\end{bmatrix}$$
+
 * This means that the new points are [1,1] and [2,2] which does not form a rhombus, but instead, a line 
 * Since [1,1] and [2,2] are on a line, then the determinant of that matris `|a| = 0` because **the area of a line is zero** 
 * When the basis vectors are linearly independent, then the area = 0 then we cant inverse the matrix, it has no inverse, and there is NO SOLUTION 
 * It's like if we collapse a 3D plane into a single 2D line, information is lost and we cant' re-expand the line to figure out where the plane is 
-* We need to check that basis vectors are linearly independent before trying to find its inverse and/or determinant
+
+
+--> We need to check that basis vectors are linearly independent before trying to find its inverse and/or determinant
