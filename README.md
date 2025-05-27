@@ -30,7 +30,21 @@ Concepts
 * Calculate the vector projection of one vector onto another, and give the answer as a new vector $r{r.s}\over{r.r}$
 * Change the basis vectors to represent an existing vector as a function of new unit vectors
 
+### Week 3
 
+* [Lecture](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week3/W3%20%E2%80%93%20Lecture.md) 
+* [Practice Assignment: Solving linear equations using the inverse matrix](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week3/W3%20%E2%80%93%20Assignment%20%E2%80%93%20Solving%20linear%20equations%20using%20inverse%20matrix%20.md) 
+* [Practice Assignment: Using matrices to make transformations](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week3/W3%20%E2%80%93%20Assignment%20%E2%80%93%20Using%20matrices%20to%20make%20transformations.md) 
+* [Graded Assignment: Identifying Special Matrices (Jupyter)](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week3/IdentifyingSpecialMatrices.ipynb) 
+
+Concepts
+
+* Matrix transformations, rotations, skew, inversions 
+* Solving simultaneous equations by elimination, substitution
+* Find the inverse of a matrix through steps above 
+* Recap: Area of parallelogram is `ad-bc` 
+* Understand that the determinant is the scale by which a matrix's area changes (no need to memorise formula for this 
+* Understand that we should check ALL basis vectors are **linearly independent** else we will not be able to calculate its inverse or its determinant 
 
 
  
