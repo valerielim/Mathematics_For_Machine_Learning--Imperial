@@ -16,15 +16,15 @@ $$\begin{bmatrix}1&0\\\ 0&1\end{bmatrix}
 
 * Suppose we want to scale it unevenly (ie., shear): 
 
-$\begin{bmatrix} 3 & 0 \\\ 0 & 2\end{bmatrix}
-\begin{bmatrix} x \\\ y\end{bmatrix} = 
-\begin{bmatrix} 3x \\\ 2y\end{bmatrix}$
+$$\begin{bmatrix}3&0\\\ 0 & 2\end{bmatrix}
+\begin{bmatrix}x\\\ y\end{bmatrix} = 
+\begin{bmatrix}3x\\\ 2y\end{bmatrix}$$
 
 * Suppose we want to invert it along the horizontal plane, such that left becomes right and so on: 
 
-$\begin{bmatrix} -1 & 0 \\\ 0 & 1\end{bmatrix}
-\begin{bmatrix} x \\\ y\end{bmatrix} = 
-\begin{bmatrix} -x \\\ y\end{bmatrix}$
+$$\begin{bmatrix} -1 & 0\\\ 0 & 1\end{bmatrix}
+\begin{bmatrix} x\\\ y\end{bmatrix} = 
+\begin{bmatrix} -x\\\ y\end{bmatrix}$$
 
 * Suppose we want to invert it along the vertical plane, such that top becomes bottom and so on: 
 
