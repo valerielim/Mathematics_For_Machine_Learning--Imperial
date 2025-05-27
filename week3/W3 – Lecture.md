@@ -57,6 +57,64 @@ $$\begin{bmatrix} \cos\theta & \sin\theta \\\
 -\sin\theta/ & \cos\theta\end{bmatrix}
 \begin{bmatrix} x \\\ y\end{bmatrix}$$
 
-* Application: Image transformation occassionally (eg., to detect and fix skew in OCR or FR projects). 
+Application: Image transformation occassionally (eg., to detect and fix skew in OCR or FR projects). 
 
+### Solving simultaneous equations using gaussian elimination + back substitution
 
+![Lecture 3](imgs/w3_lect2.png)
+
+* We can solve equations by subtracting one "row" of the matrix" from another, and through simplifying the equations, solve it
+* The screenshot above shows the matrix, where everything below the diagonal is `0`, is known as its `echelon form`. 
+* We can easily solve a matrix in its echelon form 
+* Arriving at this form gives us the answer (in some situations)
+
+![Lecture 3](imgs/w3_lect3.png)
+
+### Inverse of Matrix
+
+* The identity matrix is defined as: 
+
+$$\begin{bmatrix} 1 & 0 & 0\\ 0 & 1 & 0\\\
+0 & 0 & 1\end{bmatrix}$$
+
+* We can write the formula for the identity as: $A . A^-1 = I$
+* We can find what $A^-1$ is through repeatedly performing elimiation and back substitution: 
+	* subtract row 1 from row 2 to give new row 2  
+	* subtract row 1 from row 3 to give new row 3 
+	* multiply row 3 by (-1)
+	* subtract new row 3 from row 2 to give new row 2 
+	* subtract new row 3 from row 1 to give new row 1 
+	* subtract new row 2 from row 1 to give new row 1 
+* Perform the same operations on the matrix on the right, aka the Identity
+* The result of the "new" identity matrix will be equal to the inverse of A.  
+
+![Lecture 3](imgs/w3_lect4.png)
+
+### The Determinant
+
+* Suppose we scale a matrix `[x, 0]` and `[0, y]` and we scale this larger by $\begin{bmatrix}a & 0\\\ 0 & d\end{bmatrix}$, we can say that **the new space is larger by a factor of `ad`**, and the determinant of this transformation matrix
+
+![Lecture 3](imgs/w3_lect5.png)
+
+* Area of parallelogram = `ad - bc` 
+* We can find the inverse of a matrix by flipping the terms on the diagonal to get the determinant: 
+
+![Lecture 3](imgs/w3_lect6.png)
+
+$$
+\begin{bmatrix} a & b\\\ c & d\end{bmatrix}
+\begin{bmatrix} d & -b\\\ -c & a\end{bmatrix} = 
+\begin{bmatrix} ad - bc & 0\\\ 0 & ad - bc\end{bmatrix}
+$$
+
+* Don't really need how to manually calculate determinants anymore because python can handle all this for us
+* Application: QR code decomposition 
+
+> What happens when a matrix doesnt have linearly independent basis vectors? 
+
+* Suppose we have a matrix $A = \begin{bmatrix}1&2 \\\ 1&2\end{bmatrix}$ that we want to scale a vector by 
+* This means that the new points are [1,1] and [2,2] which does not form a rhombus, but instead, a line 
+* Since [1,1] and [2,2] are on a line, then the determinant of that matris `|a| = 0` because **the area of a line is zero** 
+* When the basis vectors are linearly independent, then the area = 0 then we cant inverse the matrix, it has no inverse, and there is NO SOLUTION 
+* It's like if we collapse a 3D plane into a single 2D line, information is lost and we cant' re-expand the line to figure out where the plane is 
+* We need to check that basis vectors are linearly independent before trying to find its inverse and/or determinant
