@@ -1,4 +1,4 @@
-# Week2 - Changing Basis
+# Week2 – Changing Basis
 
 Practice assignment walkthrough. Workings at the top, screenshots at the bottom. 
 

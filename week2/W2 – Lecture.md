@@ -73,13 +73,13 @@ $|r-s|^2 = |r|^2 + |s|^2 - 2|r||s|\cos\theta$
 
 $r.s = |r||s|\cos\theta$
 $r.s = |r|(Scalar value representing the Projection of S onto R)$
-${r.s\over|r|} = {|s|\cos\theta}$
+${r.s\}over{|r|} = {|s|\cos\theta}$
 
 This will give a number representing the scalar projection of S onto R. 
 
 If we want a vector projection instead, representing the larger/ smaller vector R, we can multiply the scalar projection above by the unit vector R: 
 
-$r{r.s\over|r||r|} = r{r.s\over r.r}$
+$r{r.s}\over{|r||r|} = r{r.s}\over{r.r}$
 
 ### Changing Basis
 

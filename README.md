@@ -2,39 +2,35 @@
 
 ### Week 1 
 
-* Introduction
-* Practice Assignment: Exploring parameter space 
-* Practice Assignment: Solving simultaneous equations 
-* Practice Assignment: Doing some vector operations
+* [Introduction](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week1/W1%20%E2%80%93%20Intro.md)
+* [Practice Assignment: Exploring parameter space](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week1/W1%20%E2%80%93%20Assignment%20%E2%80%93%20Exploring%20Parameter%20Space%20.md)
+* [Practice Assignment: Solving simultaneous equations](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week1/W1%20%E2%80%93%20Assignment%20%E2%80%93%20Simultaneous%20Equations.md) 
+* [Practice Assignment: Doing vector operations](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week1/W1%20%E2%80%93%20Assignment%20%E2%80%93%20Doing%20vector%20operations.md)
 
-Exercise: Doing Some Vector Operations 
+Concepts
 
 * vector addition `[a, b] + [c, d] = [a+c, b+d]`
 * vector subtraction `[a, b] - [c, d] = [a-c, b-d]`
 * identifying the right vector in a 2d space [x, y]
 
-Cheatsheet & Notes: 
-
-* None 
-
 ### Week 2 
 
-Contents summary: 
+* [Lecture](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week2/W2%20%E2%80%93%20Lecture.md) 
+* [Practice Assignment: Dot product of vectors](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week2/W2%20%E2%80%93%20Assignment%20%E2%80%93%20Dot%20Product%20of%20Vectors.md)
+* [Practice Assignment: Changing Basis](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week2/W2%20%E2%80%93%20Assignment%20%E2%80%93%20Changing%20Basis.md)
+* [Practice Assignment: Linear Dependency](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week2/W2%20%E2%80%93%20Assigment%20%E2%80%93%20Linear%20Dependency%20of%20a%20set%20of%20vectors%20.md) 
+* [Assignment: Vector Operations Assessment](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week2/W2%20%E2%80%93%20Graded%20Assignment%20%E2%80%93%20Vector%20Operations%20Assessment.md) 
 
-* Modulus and Inner product as the length of a vector
-* Cosine & Dot product as multiplication of a vector 
-* Calculating projection of one vector on another 
+Concepts
 
-Exercise: Dot product of vectors 
+* Calculate dot product of one vector with another (e.g., `r.s`) 
+* Calculate length of vector through modulus, or dot product with itself (e.g., length of `r = r.r` 
+* Applying cosine rule to test for orthogonality, $r.s = |r||s|\cos\theta$, and if $r.s = 0$ then they are indeed at 90" to each other 
+* Calculate the scalar projection of one vector onto another, and give the answer as a number (ratio, fraction, percentage) representing the partial length of the second vector: ${r.s\}over{|r|}$
+* Calculate the vector projection of one vector onto another, and give the answer as a new vector $r{r.s}\over{r.r}$
+* Change the basis vectors to represent an existing vector as a function of new unit vectors
 
-* modulus
-* dot product 
-* scalar projection 
-* vector projection 
-* vector size comparison 
 
-Cheatsheet & Notes: 
 
-* [tbc] 
 
  

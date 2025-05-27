@@ -1,4 +1,4 @@
-# Week2 - Dot Project of Vectors
+# Week2 - Dot Product of Vectors
 
 Practice assignment walkthrough. Workings at the top, screenshots at the bottom. 
 
