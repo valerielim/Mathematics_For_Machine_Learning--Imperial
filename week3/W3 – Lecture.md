@@ -10,9 +10,7 @@
 
 * No transformation:
 
-$\begin{bmatrix}1&0\\\0&1\end{bmatrix}
-\begin{bmatrix}x\\\y\end{bmatrix} = 
-\begin{bmatrix}x\\\y\end{bmatrix}$
+$\begin{bmatrix}1&0\\\0&1\end{bmatrix} \begin{bmatrix}x\\\y\end{bmatrix} = \begin{bmatrix}x\\\y\end{bmatrix}$
 
 * Suppose we want to scale it unevenly (ie., shear): 
 
