@@ -35,16 +35,19 @@ Concepts
 * [Lecture](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week3/W3%20%E2%80%93%20Lecture.md) 
 * [Practice Assignment: Solving linear equations using the inverse matrix](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week3/W3%20%E2%80%93%20Assignment%20%E2%80%93%20Solving%20linear%20equations%20using%20inverse%20matrix%20.md) 
 * [Practice Assignment: Using matrices to make transformations](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week3/W3%20%E2%80%93%20Assignment%20%E2%80%93%20Using%20matrices%20to%20make%20transformations.md) 
-* [Graded Assignment: Identifying Special Matrices (Jupyter)](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week3/IdentifyingSpecialMatrices.ipynb) 
+* [Graded Assignment: Identifying Special Matrices (Jupyter)](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week3/W3%20%E2%80%93%20Graded%20Assignment%20%E2%80%93%20IdentifyingSpecialMatrices.ipynb) 
 
 Concepts
 
-* Matrix transformations, rotations, skew, inversions 
-* Solving simultaneous equations by elimination, substitution
-* Find the inverse of a matrix through steps above 
+* Matrix **clockwise** rotation by angle $\theta\$ using the formula: 
+
+$$\begin{bmatrix} \cos\theta & \sin\theta \\\ 
+-\sin\theta/ & \cos\theta\end{bmatrix}
+\begin{bmatrix} x \\\ y\end{bmatrix}$$
+
+* Solving simultaneous equations by elimination, substitution. Find the inverse of a matrix through performing these operations on the identity matrix. 
 * Recap: Area of parallelogram is `ad-bc` 
-* Understand that the determinant is the scale by which a matrix's area changes (no need to memorise formula for this 
 * Understand that we should check ALL basis vectors are **linearly independent** else we will not be able to calculate its inverse or its determinant 
 
-
+### Week 4 
  
