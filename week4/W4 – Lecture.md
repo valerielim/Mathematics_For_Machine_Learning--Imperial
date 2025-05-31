@@ -19,7 +19,7 @@ b_{n1} & b_{n2} & ... & b_{nn}\end{bmatrix} =
 
 In other words:
 
-$$(ab)_{23} = a_{21}b_{13} + a_{22}b_{23} + ... + a_{2n}b_{n3}$$
+$$ab_{23} = a_{21}b_{13} + a_{22}b_{23} + ... + a_{2n}b_{n3}$$
 
 Or formally:
 
