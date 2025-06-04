@@ -51,7 +51,7 @@ I accidentally proved them together so here they are explained together.
 
 ![special quiz](imgs/w4_hard_quiz6.png)
 
-We will see that the third statement is simply the second statement's brackets expanded out. The reasoning for the transformation of $I_{ij}$ to $r_i$ is in the blue highlighted area. And the reasoning for the next transformation of $$r_j[\hat e_3]_j$ to $r_3$ is in yellow. Sorry the opacity of the highlight colour is kind of crazy, I could not find a highlighter in my room so I made this on my phone. 
+We will see that the third statement is simply the second statement's brackets expanded out. The reasoning for the transformation of $I_{ij}$ to $r_i$ is in the blue highlighted area. And the reasoning for the next transformation of $r_j[\hat e_3]_j$ to $r_3$ is in yellow. Sorry the opacity of the highlight colour is kind of thick, I could not find a highlighter in my room so I made this on my phone. 
 
 ![special quiz](imgs/w4_hard_quiz8.jpg)
 
@@ -62,8 +62,16 @@ We will see that the third statement is simply the second statement's brackets e
 In case you can't read the handwriting:
 
 * The only difference in this expression is the term $I_{3j}$, which is referring to the 3rd row of the identity matrix 
-* For this problem, recall that there are 3 direction vectors $\hat e_1, \hat e_2, \hat e_3$ 
+* For this problem, recall that there are 3 direction vectors $\hat e_1, \hat e_2, \hat e_3$ and no more. So we can say $I_{3j} = \hat e_3$. 
 
 ![special quiz](imgs/w4_hard_quiz10.jpg)
 
+**Combining everything together...**
 
+![special quiz](imgs/w4_hard_quiz11.png)
+
+We proved all 4 statements are derivations of the original and are valid expressions of $r' = Ar$. This is the correct answer.
+
+### Question 3 
+
+![special quiz](imgs/w4_hard_quiz12.png)
