@@ -51,3 +51,6 @@ $$\begin{bmatrix} \cos\theta & \sin\theta \\\
 
 ### Week 4 
  
+* [Lecture](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Lecture.md) 
+* [Practice Assignment: Non-square matrix multiplication](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Assignment%20%E2%80%93%20Non-square%20Matrix%20Multiplication.md) 
+* [Practice Assignment: VERY HARD SHIT DONT LOOK] 
