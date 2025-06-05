@@ -8,7 +8,7 @@ This problem can be simplified to this: (left: 3D image; right: 2D image).
 
 ### Question 1 
 
-Question: Rearrange this expression for $\lambda$ and substitute it back into $r'$ in order to get $r'$ in terms of $r$. 
+"Rearrange this expression for $\lambda$ and substitute it back into $r'$ in order to get $r'$ in terms of $r$."
 
 Solution: 
 
@@ -23,7 +23,7 @@ The answer:
 
 ### Question 2 
 
-Question: From question 1, you should see that $r'$ can be written as a linear transformation of $r$. This means we should be able to write $r' = Ar$ for some matrix $A$. To help us find an expression for $A$, we can re-write the expression above with Einstein summation convention. Which of the answers below correspond to the answer for Question 1? Select all that apply. 
+"From question 1, you should see that $r'$ can be written as a linear transformation of $r$. This means we should be able to write $r' = Ar$ for some matrix $A$. To help us find an expression for $A$, we can re-write the expression above with Einstein summation convention. Which of the answers below correspond to the answer for Question 1? Select all that apply."
 
 Approach:
 
@@ -61,36 +61,41 @@ In case you can't read the handwriting:
 ![special quiz](imgs/w4_hard_quiz10.jpg)
 
 **Combining everything together...**
+
 ![special quiz](imgs/w4_hard_quiz14.png)
 
 --> We proved all 4 statements are derivations of the original and are valid expressions of $r' = Ar$. This is the correct answer.
 
 ### Question 3 
 
-Question: Based on your answers to the previous question, or otherwise, you should now be able to give an expression for $A$ in its component form by ealuating the components $A_{ij}$ for each row $i$ and $j$. Since $A$ will take a 3D vector, $r$, and transform it into a 2D vector, $r'$, we only need to write the first two rows of $A$. That is, $A$ will eb a 2x3 matrix. Remmeber, the columns of a matrix are the vectors in the new space that the unit vectors of the old space transform to - and in our new space, our vectors will be 2D. What is the value of $A$? 
+"Based on your answers to the previous question, or otherwise, you should now be able to give an expression for $A$ in its component form by ealuating the components $A_{ij}$ for each row $i$ and $j$. Since $A$ will take a 3D vector, $r$, and transform it into a 2D vector, $r'$, we only need to write the first two rows of $A$. That is, $A$ will eb a 2x3 matrix. Remmeber, the columns of a matrix are the vectors in the new space that the unit vectors of the old space transform to - and in our new space, our vectors will be 2D. What is the value of $A$?"
 
 Approach:
 
 * We pick one of the statements from question 2 and create the matrix from there
-* Since we know what the identity is, and what each direction vector is (recall: x-axis, y-axis, z-axis), i think its easiest if we work from the GREEN circled statement
-* Values circled in PURPLE are related -- we substitute them from the left, into the right (highlighted so it doesnt appear like I'm skipping steps)
+* Since we know what the identity matrix is, and what each direction vector is (recall: x-axis, y-axis, z-axis), i think its easiest if we work from the GREEN circled statement (ie., the second statement from question 2)
+* Values circled in PURPLE are related -- we substitute them (highlighted so it doesnt appear like I'm skipping steps)
 * I wrote the last line wrongly! The last line should be $s_2 \over s_3$ instead of $s_1 \over s_3$, as written in every line before it. 
 
 ![special quiz](imgs/w4_hard_quiz18.jpg)
+
+The answer: 
 
 ![special quiz](imgs/w4_hard_quiz15.png)
 
 ### Question 4 
 
-Question: $A$ is a 2x3 matrix, but if you were to evaluate its third row, what would its components be? 
+"Question: $A$ is a 2x3 matrix, but if you were to evaluate its third row, what would its components be?"
+
+Approach:
+
+* We simply extend the expression from question 3 
+* Intuitively, the question reminds us that the point $r'_3 = 0$, or that the height of all shadows on the ground would be zero
+* But to prove it we can calculate it too. We previously found out all the values when $i = 1$ and $i = 2$, now we do it for. $i = 3$. 
+* The purple circles correspond to how we can vind the values for $\hat e_3$ in question 3 (also circled in purple)
+* Screenshot for answer grouped with question 5
 
 ![special quiz](imgs/w4_hard_quiz19.jpg)
-
-Solution:
-
-* This is pretty simple, we just extend the expression from question 3 
-* Meaning, we previously found out all the values when $i = 1$ and $i = 2$, now we do it for. $i = 3$. 
-* The purple circles correspond to how we can vind the values for $\hat e_3$ in question 3 (also circled in purple)
 
 ### Question 5 
 
@@ -104,16 +109,22 @@ Question: Assume the Sun's rays come in at a direction $\hat s = \begin{bmatrix}
 
 ### Question 6 
 
-Question: Another use of non-square matrices is applying a matrix to a list of vectors. Given our transformation $r' = Ar$, this can be generalised to a matrix equation $R' = AR$, where $R'$ and $R$ are matrices, and where each column's corresponding $r'$ and $r$ are vectors. 
+"Another use of non-square matrices is applying a matrix to a list of vectors. Given our transformation $r' = Ar$, this can be generalised to a matrix equation $R' = AR$, where $R'$ and $R$ are matrices, and where each column's corresponding $r'$ and $r$ are vectors. 
 
 In Einstein notation, $r'_i = A_{ij}r_j$ becomes $R'_{ia} = A_{ij}R_{ka}$. 
 
-For the same $\hat s$ as in the previous quesiton, apply $A$ to the matrix. Observe that it is the same result as treating the columns as separate vectors and calculating them individually. 
+For the same $\hat s$ as in the previous quesiton, apply $A$ to the matrix. Observe that it is the same result as treating the columns as separate vectors and calculating them individually."
+
+Approach:
+
+* Matrix multiplication.. 
 
 ![special quiz](imgs/w4_hard_quiz21.jpg)
 
 ![special quiz](imgs/w4_hard_quiz17.png)
 
 ### Closing comment
+
+10/10 = 100%! 
 
 This is a more challenging exercise and I had so much fun puzzling over it! Frankly anyone can get the correct answers online (or via Coursera, with sufficient attempts at guessing), but there is neither an explanation posted online, nor one given by the official course, so this is my contribution. 
