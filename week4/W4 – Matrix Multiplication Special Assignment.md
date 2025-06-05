@@ -1,20 +1,10 @@
 # Special Assignment – Using Non-square Matrices to do a Projection
 
-This is a more challenging exercise and I had so much fun puzzling over it! Frankly anyone can get the correct answers online (or via Coursera, with sufficient attempts at guessing), but I have yet to see an explanation posted online, so this is my contribution. 
+### Context
 
-After completing the rest of the course, I can say that you don't necessarily have to get 100% on this assignment, or even pass the quiz, to have a good overall grasp of the concepts in this course. So don't worry if your grade for this quiz was too not good. 
-
-### Question 
-
-We are given the diagram: 
-
-![special quiz](imgs/w4_hard_quiz1.png)
-
-To simplify, we can express this in 2D form like so:
+This problem can be simplified to this: (left: 3D image; right: 2D image).
 
 ![special quiz](imgs/w4_hard_quiz2.jpg)
-
-(Above left: 3D image; right: 2D image) 
 
 ### Question 1 
 
@@ -23,15 +13,19 @@ Question: Rearrange this expression for $\lambda$ and substitute it back into $r
 Solution: 
 
 * Tbh we don't even need to really bother about the problem context for question 1
-* This is just a matter of algebra manipulation for simultaneous equations
+* This is just a matter of algebra manipulation for two simultaneous equations provided
 
 ![special quiz](imgs/w4_hard_quiz3.jpg)
+
+The answer: 
+
+![special quiz](imgs/w4_hard_quiz13.png)
 
 ### Question 2 
 
 Question: From question 1, you should see that $r'$ can be written as a linear transformation of $r$. This means we should be able to write $r' = Ar$ for some matrix $A$. To help us find an expression for $A$, we can re-write the expression above with Einstein summation convention. Which of the answers below correspond to the answer for Question 1? Select all that apply. 
 
-Solution:
+Approach:
 
 * We will apply einstein's summation notation and identity matrices for this 
 * We can find the expression for matrix A by working backwards on each statement
@@ -45,7 +39,7 @@ Solution:
 
 **Second and third statement**
 
-I accidentally proved them together so here they are explained together. 
+I proved the second one before realising it is extremely similar to the third statement, so here they are, explained together. 
 
 ![special quiz](imgs/w4_hard_quiz5.png)
 
@@ -67,11 +61,59 @@ In case you can't read the handwriting:
 ![special quiz](imgs/w4_hard_quiz10.jpg)
 
 **Combining everything together...**
+![special quiz](imgs/w4_hard_quiz14.png)
 
-![special quiz](imgs/w4_hard_quiz11.png)
-
-We proved all 4 statements are derivations of the original and are valid expressions of $r' = Ar$. This is the correct answer.
+--> We proved all 4 statements are derivations of the original and are valid expressions of $r' = Ar$. This is the correct answer.
 
 ### Question 3 
 
-![special quiz](imgs/w4_hard_quiz12.png)
+Question: Based on your answers to the previous question, or otherwise, you should now be able to give an expression for $A$ in its component form by ealuating the components $A_{ij}$ for each row $i$ and $j$. Since $A$ will take a 3D vector, $r$, and transform it into a 2D vector, $r'$, we only need to write the first two rows of $A$. That is, $A$ will eb a 2x3 matrix. Remmeber, the columns of a matrix are the vectors in the new space that the unit vectors of the old space transform to - and in our new space, our vectors will be 2D. What is the value of $A$? 
+
+Approach:
+
+* We pick one of the statements from question 2 and create the matrix from there
+* Since we know what the identity is, and what each direction vector is (recall: x-axis, y-axis, z-axis), i think its easiest if we work from the GREEN circled statement
+* Values circled in PURPLE are related -- we substitute them from the left, into the right (highlighted so it doesnt appear like I'm skipping steps)
+* I wrote the last line wrongly! The last line should be $s_2 \over s_3$ instead of $s_1 \over s_3$, as written in every line before it. 
+
+![special quiz](imgs/w4_hard_quiz18.jpg)
+
+![special quiz](imgs/w4_hard_quiz15.png)
+
+### Question 4 
+
+Question: $A$ is a 2x3 matrix, but if you were to evaluate its third row, what would its components be? 
+
+![special quiz](imgs/w4_hard_quiz19.jpg)
+
+Solution:
+
+* This is pretty simple, we just extend the expression from question 3 
+* Meaning, we previously found out all the values when $i = 1$ and $i = 2$, now we do it for. $i = 3$. 
+* The purple circles correspond to how we can vind the values for $\hat e_3$ in question 3 (also circled in purple)
+
+### Question 5 
+
+Question: Assume the Sun's rays come in at a direction $\hat s = \begin{bmatrix} 4/13 \\\ -3/13 \\\ -12/13 \end{bmatrix}$. Construct the matrix $A$, and apply it to a point $r = \begin{bmatrix} 6 \\\ 2 \\\ 3 \end{bmatrix}$, on an object in our space to find the coordinates of that point's shadow. Give the coordinates of $r'$. 
+
+![special quiz](imgs/w4_hard_quiz20.jpg)
+
+*(Handwriting getting squiggly but I'm not going to rewrite this)*
+
+![special quiz](imgs/w4_hard_quiz16.png)
+
+### Question 6 
+
+Question: Another use of non-square matrices is applying a matrix to a list of vectors. Given our transformation $r' = Ar$, this can be generalised to a matrix equation $R' = AR$, where $R'$ and $R$ are matrices, and where each column's corresponding $r'$ and $r$ are vectors. 
+
+In Einstein notation, $r'_i = A_{ij}r_j$ becomes $R'_{ia} = A_{ij}R_{ka}$. 
+
+For the same $\hat s$ as in the previous quesiton, apply $A$ to the matrix. Observe that it is the same result as treating the columns as separate vectors and calculating them individually. 
+
+![special quiz](imgs/w4_hard_quiz21.jpg)
+
+![special quiz](imgs/w4_hard_quiz17.png)
+
+### Closing comment
+
+This is a more challenging exercise and I had so much fun puzzling over it! Frankly anyone can get the correct answers online (or via Coursera, with sufficient attempts at guessing), but there is neither an explanation posted online, nor one given by the official course, so this is my contribution. 
