@@ -53,7 +53,7 @@ $$\begin{bmatrix} \cos\theta & \sin\theta \\\
  
 * [Lecture](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Lecture.md) 
 * [Practice Assignment: Non-square matrix multiplication](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Assignment%20%E2%80%93%20Non-square%20Matrix%20Multiplication.md) 
-* [Special Assignment: Using non-square matrices to do a projection –– I know you're all looking for this](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Matrix%20Multiplication%20Special%20Assignment.md) 
+* [Special Assignment: Using non-square matrices to do a projection](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Matrix%20Multiplication%20Special%20Assignment.md) –– This is probably the highlight
 * [Graded Programming Assignment: Gram-Schmidt Process](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20GramSchmidtProcess.ipynb) 
 
 Concepts
@@ -61,8 +61,6 @@ Concepts
 * Einstein's summation notation: 
 
 $$ab_{23} = a_{21}b_{13} + a_{22}b_{23} + ... + a_{2n}b_{n3}$$
-
-Or formally:
 
 $$ab_{ik} = \sum_{j} a_{ij}b_{jk} = a_{ij}b_{jk}$$
 
@@ -84,14 +82,11 @@ $$B^{-1} . R . B . v$$
 * Recap: Multiplying a matrix by its transposed self, if the matrix is also orthorgonal, would give the identity matrix 
 * Conducting the Gram-Schmidt process to transform a set of vectors into orthorgonal unit vectors for subsequent use: 
 
-$$e_1 = {v_1\over{|v_1|}}$$ -- first plane
+First plane -- $$e_1 = {v_1\over{|v_1|}}$$
 
-$$u_2 = v_2 - (v_2 . e_1)e_1$$
-
+Second plane -- $$u_2 = v_2 - (v_2 . e_1)e_1$$
 $$v_2 = (v_2.e_1){e_1\over|e_1|} + u_2$$
+$$e_2 = {u_2\over{|u_2|}}$$
 
-$$e_2 = {u_2\over{|u_2|}}$$ -- second plane 
-
-$$u_3 = v_3 - (v_3 . e_1)e_1 - (v_3 . e_2)e_2$$
-
-$$e_3 = {u_3\over{|u_3|}}$$ -- third plane 
+Third plane -- $$u_3 = v_3 - (v_3 . e_1)e_1 - (v_3 . e_2)e_2$$
+$$e_3 = {u_3\over{|u_3|}}$$
