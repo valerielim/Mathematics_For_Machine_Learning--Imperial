@@ -85,8 +85,11 @@ $$B^{-1} . R . B . v$$
 First plane -- $$e_1 = {v_1\over{|v_1|}}$$
 
 Second plane -- $$u_2 = v_2 - (v_2 . e_1)e_1$$
+
 $$v_2 = (v_2.e_1){e_1\over|e_1|} + u_2$$
+
 $$e_2 = {u_2\over{|u_2|}}$$
 
 Third plane -- $$u_3 = v_3 - (v_3 . e_1)e_1 - (v_3 . e_2)e_2$$
+
 $$e_3 = {u_3\over{|u_3|}}$$
