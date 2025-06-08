@@ -9,9 +9,9 @@
 
 Concepts
 
-* vector addition `[a, b] + [c, d] = [a+c, b+d]`
-* vector subtraction `[a, b] - [c, d] = [a-c, b-d]`
-* identifying the right vector in a 2d space [x, y]
+* Vector addition `[a, b] + [c, d] = [a+c, b+d]`
+* Vector subtraction `[a, b] - [c, d] = [a-c, b-d]`
+* Identifying the right vector in a 2d space [x, y]
 
 ### Week 2 
 
@@ -23,12 +23,12 @@ Concepts
 
 Concepts
 
-* Calculate dot product of one vector with another (e.g., `r.s`) 
-* Calculate length of vector through modulus, or dot product with itself (e.g., length of `r = r.r` 
-* Applying cosine rule to test for orthogonality, $r.s = |r||s|\cos\theta$, and if $r.s = 0$ then they are indeed at 90" to each other 
-* Calculate the scalar projection of one vector onto another, and give the answer as a number (ratio, fraction, percentage) representing the partial length of the second vector: ${r.s\}over{|r|}$
-* Calculate the vector projection of one vector onto another, and give the answer as a new vector $r{r.s}\over{r.r}$
-* Change the basis vectors to represent an existing vector as a function of new unit vectors
+* Calculating the dot product of one vector with another (e.g., `r.s`) 
+* Calculating the length of vector through modulus, or dot product with itself (e.g., length of `r = r.r` 
+* Applying the cosine rule to test for orthogonality, $r.s = |r||s|\cos\theta$, and if $r.s = 0$ then they are indeed at 90" to each other 
+* Calculating the scalar projection of one vector onto another, and give the answer as a number (ratio, fraction, percentage) representing the partial length of the second vector: ${r.s\}over{|r|}$
+* Calculating the vector projection of one vector onto another, and give the answer as a new vector $r{r.s}\over{r.r}$
+* Changing the basis vectors to represent an existing vector as a function of new unit vectors
 
 ### Week 3
 
@@ -47,10 +47,51 @@ $$\begin{bmatrix} \cos\theta & \sin\theta \\\
 
 * Solving simultaneous equations by elimination, substitution. Find the inverse of a matrix through performing these operations on the identity matrix. 
 * Recap: Area of parallelogram is `ad-bc` 
-* Understand that we should check ALL basis vectors are **linearly independent** else we will not be able to calculate its inverse or its determinant 
+* Understanding that we should check ALL basis vectors are **linearly independent** else we will not be able to calculate its inverse or its determinant 
 
 ### Week 4 
  
 * [Lecture](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Lecture.md) 
 * [Practice Assignment: Non-square matrix multiplication](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Assignment%20%E2%80%93%20Non-square%20Matrix%20Multiplication.md) 
-* [Practice Assignment: VERY HARD SHIT DONT LOOK] 
+* [Special Assignment: Using non-square matrices to do a projection –– I know you're all looking for this](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Matrix%20Multiplication%20Special%20Assignment.md) 
+* [Graded Programming Assignment: Gram-Schmidt Process](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20GramSchmidtProcess.ipynb) 
+
+Concepts
+
+* Einstein's summation notation: 
+
+$$ab_{23} = a_{21}b_{13} + a_{22}b_{23} + ... + a_{2n}b_{n3}$$
+
+Or formally:
+
+$$ab_{ik} = \sum_{j} a_{ij}b_{jk} = a_{ij}b_{jk}$$
+
+* Recap: Finding the determinant of a matrix
+
+$$D = \begin{bmatrix} a & b \\\ c & d \end{bmatrix}$$
+
+$$D^{-1} = {1\over(ad-bc)}\begin{bmatrix} d & -b \\\ -c & a \end{bmatrix}$$
+
+* Finding the new vector $r'$ of a given vector $r$ in a changed basis, where the changed basis vectors in our coordinates are $D$, and its inverse is $D^{-1}$: 
+
+$$r' = D^{-1}r$$
+
+* Finding the new vector $v'$ of a given vector $v$ in a changed basis, where the changed basis vectors in our coordinates are $B$, and its inverse is $B^{-1}$, and its new rotation or transformation vector is given by $R$: (important: the order matters!)
+
+$$B^{-1} . R . B . v$$
+
+* Recap: Transposing a matrix means changing all its rows into columns, and vice versa 
+* Recap: Multiplying a matrix by its transposed self, if the matrix is also orthorgonal, would give the identity matrix 
+* Conducting the Gram-Schmidt process to transform a set of vectors into orthorgonal unit vectors for subsequent use: 
+
+$$e_1 = {v_1\over{|v_1|}}$$ -- first plane
+
+$$u_2 = v_2 - (v_2 . e_1)e_1$$
+
+$$v_2 = (v_2.e_1){e_1\over|e_1|} + u_2$$
+
+$$e_2 = {u_2\over{|u_2|}}$$ -- second plane 
+
+$$u_3 = v_3 - (v_3 . e_1)e_1 - (v_3 . e_2)e_2$$
+
+$$e_3 = {u_3\over{|u_3|}}$$ -- third plane 

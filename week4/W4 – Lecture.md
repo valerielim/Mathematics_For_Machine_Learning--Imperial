@@ -117,11 +117,11 @@ $$\begin{bmatrix} 1 & 0 & 0\\\
 
 $$B^{-1} . R . B . v$$
 
-![Lecture 2](imgs/w4_lecture8.png)
+![Lecture 2](imgs/w4_lecture9.png)
 
 Above: Formula before application
 
-![Lecture 2](imgs/w4_lecture9.png)
+![Lecture 2](imgs/w4_lecture8.png)
 
 Above: Formula with everything worked out
 
@@ -175,7 +175,7 @@ $$e_2 = {u_2\over{|u_2|}}$$
 
 Bonus: Earlier, we found the "horizontal" length of vector $v_2$ in $e_1$ units only. To get the FULL formula for $v_2$ in both $e_1$ and $e_2$:  
 
-$$v_2 = (v_2.e_1){e_1\over|e_1|} + u_2 $$ 
+$$v_2 = (v_2.e_1){e_1\over|e_1|} + u_2$$ 
 
 ![Lecture 2](imgs/w4_lecture6.png)
 
@@ -193,4 +193,6 @@ $$e_3 = {u_3\over{|u_3|}}$$
 
 * Image above: WE're given 3 vectors 
 * Everything is calculated up to the second vector, $v_2$
+* Combine everything into a single formula for the 3D plane:
 
+$$u_3 = v_3 - (v_3 . e_1)e_1 - (v_3 . e_2)e_2$$
