@@ -65,11 +65,11 @@ $$A = \begin{bmatrix} a & b \\\ c & d \end{bmatrix}$$
 
 Then:
 
-$$det(\begin{bmatrix} a & b \\\ c & d \end{bmatrix}- \lambda \begin{bmatrix} 1 & 0 \\\ 0 & 1 \end{bmatrix} =0$$
+$$det(\begin{bmatrix} a & b \\\ c & d \end{bmatrix}- \lambda \begin{bmatrix} 1 & 0 \\\ 0 & 1 \end{bmatrix})=0$$
 
-$$det(\begin{bmatrix} a & b \\\ c & d \end{bmatrix} - \begin{bmatrix} \lambda & 0 \\\ 0 & \lambda \end{bmatrix} =0$$
+$$det(\begin{bmatrix} a & b \\\ c & d \end{bmatrix}) - \begin{bmatrix} \lambda & 0 \\\ 0 & \lambda \end{bmatrix})=0$$
 
-$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix}=0$$
+$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix})=0$$
 
 This is equal to a **characteristic polynomial** which transforms the expression above into this below. Our eigenvalues will be the solution for this equation:
 
@@ -83,7 +83,7 @@ Summary of the lecture/ screenshot above:
 
 Suppose we have the transformation, A, be the matrix 
 
-$$A = (\begin{bmatrix} 1 & 0 \\\ 0 & 2 \end{bmatrix}$$
+$$A = \begin{bmatrix} 1 & 0 \\\ 0 & 2 \end{bmatrix}$$
 
 Put A into the determinant form:
 
@@ -101,7 +101,7 @@ $$@ \lambda = 1 : x = \begin{bmatrix}t \\\ 0\end{bmatrix}$$
 
 --> When lambda = 1 or that as long as $x_2 = 0$, any $x_1$ value will still constitute an eignevector
 
---> Simnilarly we find that when $\lambda = 2$, as long as $x_1 = 0$, any $x_2$ value will still constitute an eignevector.
+--> Similarly we find that when $\lambda = 2$, as long as $x_1 = 0$, any $x_2$ value will still constitute an eignevector.
 
 **Live example: Rotation by 90"**
 
@@ -111,11 +111,11 @@ Suppose we have the transformation, A, be the matrix $(\begin{bmatrix} 0 & -1 \\
 
 We know from earlier that this 90" rotation does not have any eigenvectors but lets still test it. Put A into the determinant form 
 
-$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix}=0$$
+$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c+0 & d - \lambda \end{bmatrix})=0$$
 
 This gives us: 
 
-$$det(\begin{bmatrix} a - \lambda & -1 \\\ 1 - \lambda & 0 - \lambda \end{bmatrix}$$
+$$det(\begin{bmatrix} a - \lambda & -1 \\\ 1 - \lambda & 0 - \lambda \end{bmatrix})$$
 
 Expand the determinant using the formula $ad - bc$ will give us the statement below, which we know has no solution. This means that this transformation A has no eignevectors. 
 
