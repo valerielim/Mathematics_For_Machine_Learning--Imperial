@@ -65,8 +65,7 @@ $$A = \begin{bmatrix} a & b \\\ c & d \end{bmatrix}$$
 
 Then:
 
-$$det(\begin{bmatrix} a & b \\\ c & d \end{bmatrix}
-- \lambda \begin{bmatrix} 1 & 0 \\\ 0 & 1 \end{bmatrix} =0$$
+$$det(\begin{bmatrix} a & b \\\ c & d \end{bmatrix}- \lambda \begin{bmatrix} 1 & 0 \\\ 0 & 1 \end{bmatrix} =0$$
 
 $$det(\begin{bmatrix} a & b \\\ c & d \end{bmatrix} - \begin{bmatrix} \lambda & 0 \\\ 0 & \lambda \end{bmatrix} =0$$
 
@@ -82,22 +81,45 @@ $$\lambda^2 - (a+d)\lambda + ad - bc = 0$$
 
 Summary of the lecture/ screenshot above:
 
-1. S=uppose we have the transformation, A, be the matrix $(\begin{bmatrix} 1 & 0 \\\ 0 & 2 \end{bmatrix}$
-* Put A into the determinant form $det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix}=0$
-* We solve and find that $\lambda=1$ and $\lambda=2$
-* Substitute those values back into $det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix}\begin{bmatrix}x_1 \\\ x_2\end{bmatrix} = 0$
-* We find that when $\lambda = 1 : x = \begin{bmatrix}t \\\ 0\end{bmatrix}$, or that as long as $x_2 = 0$, any $x_1$ value will still constitute an eignevector
-* Simnilarly we find that when $\lambda = 2 : x = \begin{bmatrix}0 \\\ t\end{bmatrix}$, or that as long as $x_1 = 0$, any $x_2$ value will still constitute an eignevector
+Suppose we have the transformation, A, be the matrix 
+
+$$A = (\begin{bmatrix} 1 & 0 \\\ 0 & 2 \end{bmatrix}$$
+
+Put A into the determinant form:
+
+$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix}=0$$
+
+We solve and find that $\lambda=1$ and $\lambda=2$.
+
+Substitute those values back into 
+
+$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix}\begin{bmatrix}x_1 \\\ x_2\end{bmatrix} = 0$$
+
+We find that:
+
+$$@ \lambda = 1 : x = \begin{bmatrix}t \\\ 0\end{bmatrix}$$
+
+--> When lambda = 1 or that as long as $x_2 = 0$, any $x_1$ value will still constitute an eignevector
+
+--> Simnilarly we find that when $\lambda = 2$, as long as $x_1 = 0$, any $x_2$ value will still constitute an eignevector.
 
 **Live example: Rotation by 90"**
 
 ![lecture diagram](imgs/w5_lecture5.png)
 
-1. S=uppose we have the transformation, A, be the matrix $(\begin{bmatrix} 0 & -1 \\\ 1 & 0 \end{bmatrix}$
-* We know from earlier that this 90" rotation does not have any eigenvectors but lets still test it
-* Put A into the determinant form $det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix}=0$
-* This gives us: $det(\begin{bmatrix} a - \lambda & -1 \\\ 1 - \lambda & 0 - \lambda \end{bmatrix}$
-* Expand the determinant using the formula $ad - bc$ will give us $\lambda^2 +1 = 0$ which we know has no solution 
+Suppose we have the transformation, A, be the matrix $(\begin{bmatrix} 0 & -1 \\\ 1 & 0 \end{bmatrix}$.
+
+We know from earlier that this 90" rotation does not have any eigenvectors but lets still test it. Put A into the determinant form 
+
+$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix}=0$$
+
+This gives us: 
+
+$$det(\begin{bmatrix} a - \lambda & -1 \\\ 1 - \lambda & 0 - \lambda \end{bmatrix}$$
+
+Expand the determinant using the formula $ad - bc$ will give us the statement below, which we know has no solution. This means that this transformation A has no eignevectors. 
+
+$$\lambda^2 +1 = 0$$ 
 
 **Concluding remarks**
 
