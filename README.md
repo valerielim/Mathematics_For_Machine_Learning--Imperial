@@ -97,3 +97,5 @@ $$e_3 = {u_3\over{|u_3|}}$$
 
 ### Week 5
 
+* Lecture
+* [Practice Assignment: Non-square matrix multiplication] 
