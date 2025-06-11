@@ -99,8 +99,9 @@ $$e_3 = {u_3\over{|u_3|}}$$
 
 * [Lecture](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Lecture.md)
 * [Practice Assignment: Selecting eigenvectors by inspection](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Assignment%20%E2%80%93%20Selecting%20eigenvectors%20by%20inspection.md) 
-* [Practice Assignment: Characteristic polynomials, eigenvalues and eigenvectors]
+* [Practice Assignment: Characteristic polynomials, eigenvalues and eigenvectors](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Assignment%20%E2%80%93%20Characteristic%20polynomials%2C%20eigenvalues%20and%20eigenvectors.md)
 
 Concepts
 
-* Calculate eigenvectors and eigenvalues from a matrix, if it exists 
+* Calculate eigenvectors and eigenvalues from a matrix, if it exists
+* 
