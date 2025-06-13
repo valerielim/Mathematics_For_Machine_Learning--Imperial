@@ -126,6 +126,8 @@ $$\lambda^2 +1 = 0$$
 * Strong conception understanding is more important 
 * Dont really need to learn to calculate manually by hand
 
+---------------------------------------------------------
+
 ### Scaling up multiplication of matrices
 
 ![lecture diagram](imgs/w5_lecture6.png)
@@ -137,37 +139,37 @@ $$\lambda^2 +1 = 0$$
 Problem: What if we need to multiply a vector by a transformation multiple times? This is computationally expensive. We can solve this through identifying the eigenvector(s) os the matrix, $C$, represented as a diagonal matrix $D$, in order to convert the transformation matrix $T$ by $n$ times.
 
 * $v$ is the original matrix
-* $C$ is the concatenation of eigenvector(s) from $v$ 
-* $C^-1$ is the inverse of $C$
-* $D$ is the diagonal matrix of all $\lambda$ eigenvalues
 * $n$ is the number of times we want to multiply it in our question 
+* $C$ is the concatenation of eigenvector(s) from $v$ 
+* $C^{-1}$ is the inverse of $C$
+* $D$ is the diagonal matrix of all $\lambda$ eigenvalues
 * $T$ is the transformation matrix, aka $T^n = CD^nC^{-1}$
 
 **Applied example**
 
 Let the vector $v$ be
 
-$$v = \begin{bmatrix} -1 \\\ 1 \end{bmatrix})$$
+$$v = \begin{bmatrix} -1 \\\ 1 \end{bmatrix}$$
 
 Let the desired transformation $T$ be:
 
-$$T = \begin{bmatrix} 1 & 1 \\\ 0 & 2 \end{bmatrix})$$
+$$T = \begin{bmatrix} 1 & 1 \\\ 0 & 2 \end{bmatrix}$$
 
 Solving $T$ gives the following eigenvectors and values:
 
-$$@\lambda_1 = 1: = \begin{bmatrix} 1 \\\ 0 \end{bmatrix})$$
+$$@\lambda_1 = 1: = \begin{bmatrix} 1 \\\ 0 \end{bmatrix}$$
 
-$$@\lambda_2 = 2: = \begin{bmatrix} 1 \\\ 1 \end{bmatrix})$$ 
+$$@\lambda_2 = 2: = \begin{bmatrix} 1 \\\ 1 \end{bmatrix}$$ 
 
-We combine the eigenvectors to form $C$:
+We combine the eigenvectors $1, 2$ to form $C$:
 
-$$C = \begin{bmatrix} 1 & 1 \\\ 0 & 1 \end{bmatrix})$$
+$$C = \begin{bmatrix} 1 & 1 \\\ 0 & 1 \end{bmatrix}$$
 
-$$C^{-1} = \begin{bmatrix} 1 & -1 \\\ 0 & 1 \end{bmatrix})$$
+$$C^{-1} = \begin{bmatrix} 1 & -1 \\\ 0 & 1 \end{bmatrix}$$
 
 We combine the eigenvalues to form the diagonal matrix $D$:
 
-$$C = \begin{bmatrix} 1 & 0 \\\ 0 & 2 \end{bmatrix})$$
+$$C = \begin{bmatrix} 1 & 0 \\\ 0 & 2 \end{bmatrix}$$
 
 Now we solve for $T$:
 
@@ -175,16 +177,32 @@ $$T^n = CD^nC^{-1}$$
 
 $$T^2 = CD^2C^{-1}$$
 
-$$T^2 = \begin{bmatrix} 1 & 3 \\\ 0 & 4 \end{bmatrix})$$
+$$T^2 = \begin{bmatrix} 1 & 1 \\\ 0 & 1 \end{bmatrix} \begin{bmatrix} 1 & 0 \\\ 0 & 2 \end{bmatrix}^2 \begin{bmatrix} 1 & -1 \\\ 0 & 1 \end{bmatrix}$$
+
+$$T^2 = \begin{bmatrix} 1 & 3 \\\ 0 & 4 \end{bmatrix}$$
 
 Finally we solve for $T^2.v$:
 
-$$T^2.v = \begin{bmatrix} 1 & 3 \\\ 0 & 4 \end{bmatrix})\begin{bmatrix} -1 \\\ 1 \end{bmatrix})$$
+$$T^2.v = \begin{bmatrix} 1 & 3 \\\ 0 & 4 \end{bmatrix}\begin{bmatrix} -1 \\\ 1 \end{bmatrix})$$
 
-$$T^2.v = \begin{bmatrix} 2 \\\ 4 \end{bmatrix})$$
+$$T^2.v = \begin{bmatrix} 2 \\\ 4 \end{bmatrix}$$
 
 Exclusion
 
 * Undiagonisable matrices
 * Complex and imaginary solutions
 
+-----------------------------------------------
+
+### Introduction to Pagerank
+
+* The importance of a website can be measured by how it ranks to other webpages
+* The ranks on all pages depend on all others; this is a self-referential problem
+* Each row is 0, 1 depending on whether a link to that corresponding page exists from the current page 
+* WE normalise the vector by the total number of links, such that each value represents a probability of that link being clicked for that page 
+* Formula:
+
+$$M = d L + {{1-d}\over{n}} J$$
+
+* Above: $n$ represents the number of elements, $L$ represents the probability matrix of each element connecting to another, $d$ represents the damping factor and $J$ is the $nxn$ matrix where every element is one.
+* Lab covers the of diagonalisation to write pagerank formula

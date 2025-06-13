@@ -1,6 +1,6 @@
 # Mathematics_For_Machine_Learning--Imperial
 
-### Week 1 
+### Week 1
 
 * [Introduction](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week1/W1%20%E2%80%93%20Intro.md)
 * [Practice Assignment: Exploring parameter space](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week1/W1%20%E2%80%93%20Assignment%20%E2%80%93%20Exploring%20Parameter%20Space%20.md)
@@ -100,8 +100,22 @@ $$e_3 = {u_3\over{|u_3|}}$$
 * [Lecture](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Lecture.md)
 * [Practice Assignment: Selecting eigenvectors by inspection](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Assignment%20%E2%80%93%20Selecting%20eigenvectors%20by%20inspection.md) 
 * [Practice Assignment: Characteristic polynomials, eigenvalues and eigenvectors](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Assignment%20%E2%80%93%20Characteristic%20polynomials%2C%20eigenvalues%20and%20eigenvectors.md)
+* 
 
 Concepts
 
-* Calculate eigenvectors and eigenvalues from a matrix, if it exists
-* 
+* Derive eigenvectors and eigenvalues from a matrix, if it exists (this process is waay too long to write, please see lecture notes) 
+* Scaling up multiplication of a matrix $v$ by a transformation vector $T$, to find $T^n.v$
+* Apply diagonalisation and eigenvectors to solve above using formula $$T^n = CD^nC^{-1}$$
+* Application of diagonalisation to write pagerank formula, where $n$ represents the number of elements, $L$ represents the probability matrix of each element connecting to another, $d$ represents the damping factor and $J$ is the $nxn$ matrix where every element is one.
+
+$$M = d L + {{1-d}\over{n}} J$$
+
+### Conclusion
+
+Prof David Dye and Prof Samuel Coooper did a really good job teaching the material. They were clear, included worked examples to demonstrate the concepts, and there's a handful of visualisation aids on matrices and matrix transformation to really cement the idea in. One minor thing I would change is that in Week 5's lecture "Changing to the Eigenbasis", I would elaborate on how we use gaussian elimination further, from the homogenous system of linear equations to the eigenvector itself. I think some steps were skipped in the video in the interest of time but it would be helpful to include this (or link to additional material). I really liked each python lab and found them useful, although they could be much more challenging. They could also introduce more linear algebra python functions.
+
+Personally, I took this course to brush up on linear algebra and cover a topic I didn't formally learn in undergrad. I was wondering if there's something I've missed all these years of working in data analytics and data science. Sadly I do think the day-to-day applications of this course in practice are limited, since I don't think anyone requires data scientists to derive eigenvectors by hand or perform matrix multiplication by hand - I've always used python and modern compute resources are incredibly fast and efficient. Perhaps understanding how matrices can skew an image may be helpful when working on OCR/ FR tasks but you can also just eyeball it by hand. So if I had to rank this course as "Not useful", "Optional", or "Essential Must-Have", I would probably rank it in the middle as "Optional". 
+
+Overall, like Prof David Dye said in the conclusion, the main takeaway is to know the technical terms around linear algebra to phrase your business problem into a proper question, rather than calculating these formulas by hand. I think this course succeeds at that goal. 
+
