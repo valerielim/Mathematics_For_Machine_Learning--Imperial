@@ -67,7 +67,7 @@ Then:
 
 $$det(\begin{bmatrix} a & b \\\ c & d \end{bmatrix}- \lambda \begin{bmatrix} 1 & 0 \\\ 0 & 1 \end{bmatrix})=0$$
 
-$$det(\begin{bmatrix} a & b \\\ c & d \end{bmatrix}) - \begin{bmatrix} \lambda & 0 \\\ 0 & \lambda \end{bmatrix})=0$$
+$$det(\begin{bmatrix} a & b \\\ c & d \end{bmatrix} - \begin{bmatrix} \lambda & 0 \\\ 0 & \lambda \end{bmatrix})=0$$
 
 $$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix})=0$$
 
@@ -87,13 +87,13 @@ $$A = \begin{bmatrix} 1 & 0 \\\ 0 & 2 \end{bmatrix}$$
 
 Put A into the determinant form:
 
-$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix}=0$$
+$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix})=0$$
 
 We solve and find that $\lambda=1$ and $\lambda=2$.
 
 Substitute those values back into 
 
-$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix}\begin{bmatrix}x_1 \\\ x_2\end{bmatrix} = 0$$
+$$det(\begin{bmatrix} a - \lambda & b+0 \\\ c - \lambda & d+0 \end{bmatrix})\begin{bmatrix}x_1 \\\ x_2\end{bmatrix} = 0$$
 
 We find that:
 
@@ -183,7 +183,7 @@ $$T^2 = \begin{bmatrix} 1 & 3 \\\ 0 & 4 \end{bmatrix}$$
 
 Finally we solve for $T^2.v$:
 
-$$T^2.v = \begin{bmatrix} 1 & 3 \\\ 0 & 4 \end{bmatrix}\begin{bmatrix} -1 \\\ 1 \end{bmatrix})$$
+$$T^2.v = \begin{bmatrix} 1 & 3 \\\ 0 & 4 \end{bmatrix}\begin{bmatrix} -1 \\\ 1 \end{bmatrix}$$
 
 $$T^2.v = \begin{bmatrix} 2 \\\ 4 \end{bmatrix}$$
 
@@ -205,4 +205,4 @@ Exclusion
 $$M = d L + {{1-d}\over{n}} J$$
 
 * Above: $n$ represents the number of elements, $L$ represents the probability matrix of each element connecting to another, $d$ represents the damping factor and $J$ is the $nxn$ matrix where every element is one.
-* Lab covers the of diagonalisation to write pagerank formula
+* [The python lab](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/PageRank.ipynb) covers the of diagonalisation to write pagerank formula

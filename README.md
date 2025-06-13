@@ -55,6 +55,7 @@ $$\begin{bmatrix} \cos\theta & \sin\theta \\\
 * [Practice Assignment: Non-square matrix multiplication](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Assignment%20%E2%80%93%20Non-square%20Matrix%20Multiplication.md) 
 * [Graded Programming Assignment: Gram-Schmidt Process](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20GramSchmidtProcess.ipynb) 
 * [Graded Programming Assignment: Reflecting Bear](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20ReflectingBear.ipynb)
+* [Python Lab: Reflecting Bear](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20ReflectingBear.ipynb)
 * [Special Assignment: Using non-square matrices to do a projection](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Matrix%20Multiplication%20Special%20Assignment.md) –– This is probably the highlight
 
 Concepts
@@ -100,7 +101,9 @@ $$e_3 = {u_3\over{|u_3|}}$$
 * [Lecture](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Lecture.md)
 * [Practice Assignment: Selecting eigenvectors by inspection](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Assignment%20%E2%80%93%20Selecting%20eigenvectors%20by%20inspection.md) 
 * [Practice Assignment: Characteristic polynomials, eigenvalues and eigenvectors](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Assignment%20%E2%80%93%20Characteristic%20polynomials%2C%20eigenvalues%20and%20eigenvectors.md)
-* 
+* [Practice Assignment: Diagonalisation and applications](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Assignment%20%E2%80%93%20Diagonalisation%20and%20applications.md) 
+* [Python Lab: PageRank](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/PageRank.ipynb)
+* [Graded Assignment: Eigenvalues and eigenvectors](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week5/W5%20%E2%80%93%20Graded%20Assignment%20%E2%80%93%20Eigenvalues%20and%20Eigenvectors.md) 
 
 Concepts
 
