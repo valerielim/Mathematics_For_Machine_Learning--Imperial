@@ -58,6 +58,10 @@ $$\begin{bmatrix} \cos\theta & \sin\theta \\\
 * [Python Lab: Reflecting Bear](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20ReflectingBear.ipynb)
 * [Special Assignment: Using non-square matrices to do a projection](https://github.com/valerielim/Mathematics_For_Machine_Learning--Imperial/blob/main/week4/W4%20%E2%80%93%20Matrix%20Multiplication%20Special%20Assignment.md) –– This is probably the highlight
 
+Special Assignment | Solution + Explanation
+------------- | ---------
+![](week4/imgs/w4_hard_quiz13.png) | ![](week4/imgs/w4_hard_quiz3.jpg)
+
 Concepts
 
 * Einstein's summation notation: 

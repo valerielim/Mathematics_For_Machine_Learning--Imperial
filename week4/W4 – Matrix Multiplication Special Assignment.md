@@ -111,7 +111,13 @@ Question: Assume the Sun's rays come in at a direction $\hat s = \begin{bmatrix}
 
 "Another use of non-square matrices is applying a matrix to a list of vectors. Given our transformation $r' = Ar$, this can be generalised to a matrix equation $R' = AR$, where $R'$ and $R$ are matrices, and where each column's corresponding $r'$ and $r$ are vectors. 
 
-In Einstein notation, $r'_i = A_{ij}r_j$ becomes $R'_{ia} = A_{ij}R_{ka}$. 
+In Einstein notation, 
+
+$$r'_i = A_{ij}r_j$$ 
+
+becomes 
+
+$$R'_{ia} = A_{ij}R_{ka}$$ 
 
 For the same $\hat s$ as in the previous quesiton, apply $A$ to the matrix. Observe that it is the same result as treating the columns as separate vectors and calculating them individually."
 
